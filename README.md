@@ -1,27 +1,25 @@
-# FlexLayout
+# Angular Flex-Layout
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+   Segundo a definição dos autores, Angular Flex Layout fornece uma API de layout sofisticada usando o Flexbox CSS + mediaQuery, fornecendo aos desenvolvedores Angular recursos de layout de componentes usando uma API de layout personalizada, observáveis ​​de mediaQuery e estilos CSS DOM flexbox injetados.
 
-## Development server
+   Neste projeto testaremos o poder desta incrível biblioteca.
+  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Instalação
 
-## Code scaffolding
+- Faça um clone ou download do projeto
+- No terminal, instale os pacotes com `npm install`
+- Inicie o servidor com `ng serve`
+- Em seu navegador acesse `http://localhost:4200/`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Obs**: Este projeto foi gerado [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+
+## Dependências 
+
+- [Angular Flex-Layout](https://github.com/angular/flex-layout)
+- [Angular Material](https://material.angular.io/)
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Execute `ng build --prod` para fazer o build do projeto e colocá-lo em produção. Os arquivo gerados serão colocados na pasta  `dist/`
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
