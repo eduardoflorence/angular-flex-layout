@@ -1,0 +1,17 @@
+.cards-container {
+  margin-left: 10px;
+  margin-right: 10px;
+
+  .cards {
+    padding: 10px;
+    
+    mat-card {
+      background-color: #fff59d;
+    }
+  }
+
+}
+
+a {
+  text-decoration: none;
+}

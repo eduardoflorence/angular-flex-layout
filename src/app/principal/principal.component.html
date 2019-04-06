@@ -1,3 +1,25 @@
-<p>
-  principal works!
-</p>
+<mat-toolbar color="primary">Exemplos de Uso de Angular Flex-Layout</mat-toolbar>
+
+<div fxLayout>
+  <h4 fxFlexOffset="20px">Selecione um dos exemplos abaixo:</h4>
+</div>
+
+<div fxLayout="row wrap" class="cards-container">
+
+  <div class="cards" *ngFor="let exemplo of exemplos; let index=index"
+       fxFlex.gt-md="0 1 25%" fxFlex.md="0 1 33%" fxFlex.sm="0 1 50%" fxFlex.xs="100%">
+    <a [routerLink]="exemplo.rota">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>
+            Exemplo {{ index+1 }}
+          </mat-card-title>
+          <mat-card-subtitle>
+            {{ exemplo.nome }}
+          </mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </a>
+  </div>
+
+</div>
