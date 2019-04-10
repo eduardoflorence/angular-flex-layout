@@ -15,13 +15,15 @@ import { AppComponent } from './app.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { Exemplo1Component } from './componentes/exemplo1/exemplo1.component';
 import { Exemplo2Component } from './componentes/exemplo2/exemplo2.component';
+import { Exemplo3Component } from './componentes/exemplo3/exemplo3.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrincipalComponent,
     Exemplo1Component,
-    Exemplo2Component
+    Exemplo2Component,
+    Exemplo3Component
   ],
   imports: [
     BrowserModule,

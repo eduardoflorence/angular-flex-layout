@@ -1,0 +1,9 @@
+<div fxLayout="row wrap" fxLayout.xs="column">
+  <div *ngFor="let usuario of usuarios; let odd=odd" 
+       fxFlex="0 1 calc(25%-20px)" fxFlex.md="0 1 calc(33%-20px)" fxFlex.sm="0 1 calc(50%-20px)"
+       fxLayout fxLayoutAlign="center">
+    <img src="https://randomuser.me/api/portraits/{{odd?'women':'men'}}/{{usuario}}.jpg?nat=br" 
+         src.xs="https://randomuser.me/api/portraits/thumb/{{odd?'women':'men'}}/{{usuario}}.jpg?nat=br"
+         ngClass="foto" ngClass.xs="foto foto-xs">
+  </div>
+</div>
