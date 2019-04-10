@@ -20,6 +20,10 @@ import { Exemplo2Component } from './componentes/exemplo2/exemplo2.component';
 import { Exemplo3Component } from './componentes/exemplo3/exemplo3.component';
 import { Exemplo4Component } from './componentes/exemplo4/exemplo4.component';
 import { Exemplo5Component } from './componentes/exemplo5/exemplo5.component';
+import { CustomFlexDirective } from './breakpoints/custom-flex.directive';
+import { CustomShowHideDirective } from './breakpoints/custom-show-hide.directive';
+import { CustomBreakPointsProvider } from './breakpoints/custom-breakpoints';
+import { Exemplo6Component } from './componentes/exemplo6/exemplo6.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,10 @@ import { Exemplo5Component } from './componentes/exemplo5/exemplo5.component';
     Exemplo2Component,
     Exemplo3Component,
     Exemplo4Component,
-    Exemplo5Component
+    Exemplo5Component,
+    CustomFlexDirective,
+    CustomShowHideDirective,
+    Exemplo6Component
   ],
   imports: [
     BrowserModule,
@@ -44,7 +51,7 @@ import { Exemplo5Component } from './componentes/exemplo5/exemplo5.component';
     MatIconModule,
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [CustomBreakPointsProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
