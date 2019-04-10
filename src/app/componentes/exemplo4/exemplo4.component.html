@@ -1,0 +1,31 @@
+<div class="tabela">
+
+  <mat-table [dataSource]="vendas" class="mat-elevation-z8">
+    <ng-container *ngFor="let coluna of colunas; let colIndex = index" matColumnDef="{{ coluna }}">
+
+      <mat-header-cell *matHeaderCellDef>
+
+        <span fxHide fxShow.xs>
+          <button  mat-icon-button *ngIf="coluna !== 'produto'" (click)="mesRetrocede()" [disabled]="indexColuna === 1">
+            <mat-icon>chevron_left</mat-icon>
+          </button>
+          {{ labels[coluna !== 'produto' ? indexColuna : colIndex] }}
+          <button fxHide fxShow.xs mat-icon-button *ngIf="coluna !== 'produto'" (click)="mesAvanca()" [disabled]="indexColuna === colunasVendas.length-1">
+            <mat-icon>chevron_right</mat-icon>
+          </button>
+        </span>
+
+        <span fxShow fxHide.xs>
+          {{ labels[colIndex] }}
+        </span>
+
+      </mat-header-cell>
+        
+      <mat-cell *matCellDef="let row">{{ row[coluna] }}</mat-cell>
+    </ng-container>
+  
+    <mat-header-row *matHeaderRowDef="colunas"></mat-header-row>
+    <mat-row matRipple *matRowDef="let row; columns: colunas"></mat-row>
+  
+  </mat-table>
+</div>

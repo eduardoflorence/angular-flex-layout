@@ -7,6 +7,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
+import { MatIconModule } from '@angular/material/icon';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -16,6 +18,7 @@ import { PrincipalComponent } from './principal/principal.component';
 import { Exemplo1Component } from './componentes/exemplo1/exemplo1.component';
 import { Exemplo2Component } from './componentes/exemplo2/exemplo2.component';
 import { Exemplo3Component } from './componentes/exemplo3/exemplo3.component';
+import { Exemplo4Component } from './componentes/exemplo4/exemplo4.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,8 @@ import { Exemplo3Component } from './componentes/exemplo3/exemplo3.component';
     PrincipalComponent,
     Exemplo1Component,
     Exemplo2Component,
-    Exemplo3Component
+    Exemplo3Component,
+    Exemplo4Component
   ],
   imports: [
     BrowserModule,
@@ -34,6 +38,8 @@ import { Exemplo3Component } from './componentes/exemplo3/exemplo3.component';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
+    MatTableModule,
+    MatIconModule,
     FlexLayoutModule
   ],
   providers: [],
