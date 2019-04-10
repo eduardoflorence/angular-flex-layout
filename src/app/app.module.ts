@@ -19,6 +19,7 @@ import { Exemplo1Component } from './componentes/exemplo1/exemplo1.component';
 import { Exemplo2Component } from './componentes/exemplo2/exemplo2.component';
 import { Exemplo3Component } from './componentes/exemplo3/exemplo3.component';
 import { Exemplo4Component } from './componentes/exemplo4/exemplo4.component';
+import { Exemplo5Component } from './componentes/exemplo5/exemplo5.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { Exemplo4Component } from './componentes/exemplo4/exemplo4.component';
     Exemplo1Component,
     Exemplo2Component,
     Exemplo3Component,
-    Exemplo4Component
+    Exemplo4Component,
+    Exemplo5Component
   ],
   imports: [
     BrowserModule,

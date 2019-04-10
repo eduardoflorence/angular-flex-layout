@@ -1,0 +1,43 @@
+.carteira {
+  width: 800px;
+  margin: 50px;
+}
+
+%area{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.logo {
+  @extend %area;
+  background-color: #ff6d00;
+}
+
+.titulo {
+  @extend %area;
+  background-color: #1565c0;
+  color: white;
+}
+
+.subtitulo {
+  @extend %area;
+  background-color: #90caf9;
+}
+
+.foto {
+  @extend %area;
+  background-color: #ffee58;
+}
+
+.conteudo {
+  @extend %area;
+  background-color: #aed581;
+}
+
+.rodape {
+  @extend %area;
+  background-color: #9575cd;
+}
+
