@@ -29,6 +29,7 @@ export class Exemplo4Component implements OnInit, OnDestroy {
   ngOnInit() {
     this.watcher = this.mediaObserver.asObservable().subscribe(
       (changes: MediaChange[]) => {
+        console.log(changes);
         if (changes.some(change => change.mqAlias === 'xs')) {
           this._setMobileContent();
         } else {
